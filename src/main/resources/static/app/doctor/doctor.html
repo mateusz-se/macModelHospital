@@ -1,0 +1,66 @@
+﻿<div sample-menu></div>
+
+<div class="container">
+    <h1>Użytkownicy</h1>
+    <form class="form-horizontal">
+        <div ng-show="noAccessError" class="alert alert-danger">
+            <strong>Błąd!</strong> Masz za wysoki poziom dostępu aby edytować tę tabele
+        </div>
+        <div ng-show="cantDeleteError" class="alert alert-danger">
+            <strong>Błąd!</strong> Nie możesz usunąć ponieważ użytkownik jest powiązany z wizytą
+        </div>
+        <div class="form-group">
+            <label for="searchBox" class="col-sm-1 control-label">Wyszukaj: </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" ng-model="searchText" id="searchBox">
+            </div>
+            <div class="pull-right">
+                <a href="#/doctor/-1" class="btn btn-success btn-sm">Dodaj</a>
+            </div>
+        </div>
+    </form>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Login</th>
+            <th>Hasło</th>
+            <th>Imie</th>
+            <th>Nazwisko</th>
+            <th>Stanowisko</th>
+            <th>Lekarz</th>
+            <th>Poziom</th>
+            <th class="pull-right">Opcje</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="doctor in doctors | filter:searchText">
+            <td>
+                {{doctor.login}}
+            </td>
+            <td>
+                {{doctor.password}}
+            </td>
+            <td>
+                {{doctor.name}}
+            </td>
+            <td>
+                {{doctor.lastName}}
+            </td>
+            <td>
+                {{doctor.position}}
+            </td>
+            <td>
+                {{doctor.isDoctor == '0' ? 'nie' : 'tak' }}
+            </td>
+            <td>
+                {{doctor.label}}
+            </td>
+            <td class="pull-right">
+                <a href="#/doctor/{{doctor.userId}}" class="btn btn-default btn-xs">Edytuj</a>
+                <button type="button" ng-click="delete(doctor.userId)" class="btn btn-danger btn-xs">Usuń</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>

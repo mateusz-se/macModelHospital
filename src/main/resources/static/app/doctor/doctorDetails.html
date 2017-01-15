@@ -1,0 +1,67 @@
+<div sample-menu></div>
+
+<div class="container">
+    <h1>Edytuj użytkownika</h1>
+    <div>
+        <form class="form-horizontal" role="form" ng-submit="save()">
+            <div ng-show="noAccessError" class="alert alert-danger">
+                <strong>Błąd!</strong> Masz za wysoki poziom dostępu aby edytować tę tabele
+            </div>
+            <div ng-show="sameLoginError" class="alert alert-danger">
+                <strong>Błąd!</strong> Istnieje już użytkownik z takim loginem
+            </div>
+            <div class="form-group">
+                <label for="inputLogin" class="col-sm-2 control-label">Login: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" ng-model="newData.login" id="inputLogin" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPass" class="col-sm-2 control-label">Hasło: </label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control" ng-model="newData.password" id="inputPass" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputName" class="col-sm-2 control-label">Imie: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" ng-model="newData.name" id="inputName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputLastName" class="col-sm-2 control-label">Nazwisko: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" ng-model="newData.lastName" id="inputLastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputSpecialization" class="col-sm-2 control-label">Stanowisko: </label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" ng-model="newData.position" id="inputSpecialization" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputIsDoctor" class="col-sm-2 control-label">Lekarz: </label>
+                <div class="col-sm-6">
+                    <select class="form-control" ng-model="newData.isDoctor" id="inputIsDoctor" required>
+                        <option value="" ng-show="false"></option>
+                        <option value="0">Nie</option>
+                        <option value="1">Tak</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputLabel" class="col-sm-2 control-label">Poziom dostępu: </label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" ng-model="newData.label" id="inputLabel" min="0" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-6">
+                    <button type="submit" id="submit" class="btn btn-default">Zapisz</button>
+                    <button type="button" ng-click="back()" class="btn btn-default">Anuluj</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

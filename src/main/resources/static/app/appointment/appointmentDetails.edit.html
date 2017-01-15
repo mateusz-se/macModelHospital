@@ -1,0 +1,58 @@
+<form class="form-horizontal" role="form" ng-submit="save()">
+    <div ng-show="noAccessError" class="alert alert-danger">
+        <strong>Błąd!</strong> Masz za wysoki poziom dostępu aby edytować tę tabele
+    </div>
+    <div class="form-group">
+        <label for="inputFullNamePatient" class="col-sm-2 control-label">Pacjent: </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="newData.idPatient" ng-options="x.idPatient as x.name + ' ' + x.lastName + ' [' + x.pesel + ']' for x in patients" id="inputFullNamePatient" required>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputFullNameDoctor" class="col-sm-2 control-label">Imie i nazwisko lekarza: </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="newData.idDoctor" ng-options="x.userId as x.name + ' ' + x.lastName + ' [' + x.login + ']' for x in doctors" id="inputFullNameDoctor" required>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputOffice" class="col-sm-2 control-label">Gabinet: </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="newData.idOffice" ng-options="x.idOffice as x.number for x in offices" id="inputOffice" required>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputDate" class="col-sm-2 control-label">Data wizyty: </label>
+        <div class="col-sm-6">
+            <input type="text" data-provide="datepicker" class="form-control" ng-model="myInput.date" id="inputDate" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputTime" class="col-sm-2 control-label">Godzina wizyty: </label>
+        <div class="col-sm-6">
+            <div class="input-group bootstrap-timepicker timepicker">
+                <input id="inputTime" ng-model="time" type="text" class="form-control input-small" required>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputStatus" class="col-sm-2 control-label">Status wizyty: </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="newData.status" id="inputStatus" required>
+                <option value="umówiona">umówiona</option>
+                <option value="anulowana">anulowana</option>
+                <option value="odbyła się">odbyła się</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-6">
+            <button type="submit" class="btn btn-default">Zapisz</button>
+            <button type="button" ng-click="cancel()" class="btn btn-default">Anuluj</button>
+        </div>
+    </div>
+</form>

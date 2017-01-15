@@ -1,0 +1,63 @@
+﻿<div sample-menu></div>
+
+<div class="container">
+    <h1>Pacjenci</h1>
+    <form class="form-horizontal">
+        <div ng-show="noAccessError" class="alert alert-danger">
+            <strong>Błąd!</strong> Masz za wysoki poziom dostępu aby edytować tę tabele
+        </div>
+        <div ng-show="cantDeleteError" class="alert alert-danger">
+            <strong>Błąd!</strong> Nie możesz usunąć ponieważ pacjent jest powiązany z wizytą
+        </div>
+        <div class="form-group">
+            <label for="searchBox" class="col-sm-1 control-label">Wyszukaj: </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" ng-model="searchText" id="searchBox">
+            </div>
+            <div class="pull-right">
+                <a href="#/patients/new" class="btn btn-success btn-sm">Dodaj</a>
+            </div>
+        </div>
+
+    </form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Imie</th>
+                <th>Nazwisko</th>
+                <th>Pesel</th>
+                <th>Data urodzenia</th>
+                <th>Płeć</th>
+                <th>Numer telefonu</th>
+                <th class="pull-right">Opcje</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="patient in patients | filter:searchText">
+                <td>
+                    {{patient.name}}
+                </td>
+                <td>
+                    {{patient.lastName}}
+                </td>
+                <td>
+                    {{patient.pesel}}
+                </td>
+                <td>
+                    {{patient.birthDay | dateFilter}}
+                </td>
+                <td>
+                    {{patient.gender}}
+                </td>
+                <td>
+                    {{patient.phone}}
+                </td>
+                <td class="pull-right">
+                    <a href="#/patient/{{patient.idPatient}}" class="btn btn-default btn-xs">Szczegóły</a>
+                    <button type="button" ng-click="delete(patient.idPatient)" class="btn btn-danger btn-xs">Usuń</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

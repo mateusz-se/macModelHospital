@@ -1,0 +1,43 @@
+﻿<div sample-menu></div>
+
+<div class="container">
+    <h1>Leki</h1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div ng-show="noAccessError" class="alert alert-danger">
+                <strong>Błąd!</strong> Masz za wysoki poziom dostępu aby edytować tę tabele lub lek powiązany jest z diagnozą
+            </div>
+            <label for="searchBox" class="col-sm-1 control-label">Wyszukaj: </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" ng-model="searchText" id="searchBox">
+            </div>
+            <div class="pull-right">
+                <a href="#/drugs/-1" class="btn btn-success btn-sm">Dodaj</a>
+            </div>
+        </div>
+    </form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nazwa</th>
+                <th>Opis</th>
+                <th class="pull-right">Opcje</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="drug in drugs | filter:searchText">
+                <td>
+                    {{drug.name}}
+                </td>
+                <td>
+                    {{drug.description}}
+                </td>
+                <td class="pull-right">
+                    <a href="#/drugs/{{drug.idDrug}}" class="btn btn-default btn-xs">Edytuj</a>
+                    <button type="button" ng-click="delete(drug.idDrug)" class="btn btn-danger btn-xs">Usuń</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

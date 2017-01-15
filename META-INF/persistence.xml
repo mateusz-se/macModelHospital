@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="entityManager">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>bsk.boot.model.Doctor</class>
+        <class>bsk.boot.model.Office</class>
+        <class>bsk.boot.model.Patient</class>
+        <class>bsk.boot.model.Appointment</class>
+        <!-- Annotated entity classes -->
+        <properties>
+
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/hospital" />
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+            <property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+        </properties>
+    </persistence-unit>
+</persistence>

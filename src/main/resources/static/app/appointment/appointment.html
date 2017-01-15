@@ -1,0 +1,78 @@
+﻿<div sample-menu></div>
+
+<div class="container">
+    <h1>Wizyty</h1>
+    <form class="form-horizontal">
+        <div ng-show="noAccessError" class="alert alert-danger">
+            <strong>Błąd!</strong> Masz za wysoki poziom dostępu aby edytować tę tabele
+        </div>
+        <div ng-show="cantDeleteError" class="alert alert-danger">
+            <strong>Błąd!</strong> Nie możesz usunąć ponieważ wizyta jest powiązana z diagnozami
+        </div>
+        <div class="form-group">
+            <label for="searchBox" class="col-sm-1 control-label">Wyszukaj: </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" ng-model="searchText" id="searchBox">
+            </div>
+            <div class="pull-right" ng-show="access">
+                <a href="#/appointments/new" class="btn btn-success btn-sm">Dodaj</a>
+            </div>
+        </div>
+    </form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Imię pacjenta</th>
+                <th>Nazwisko pacjenta</th>
+                <th>Pesel pacjenta</th>
+                <th>Imię lekarza</th>
+                <th>Nazwisko lekarza</th>
+                <th>Login lekarza</th>
+                <th>Nr. gabinetu</th>
+                <th>Data wizyty</th>
+                <th>Godzina wizyty</th>
+                <th>Status</th>
+                <th>Opcje</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="appointment in appointments | filter:searchText">
+                <td>
+                    {{appointment.patient.name}}
+                </td>
+                <td>
+                    {{appointment.patient.lastName}}
+                </td>
+                <td>
+                    {{appointment.patient.pesel}}
+                </td>
+                <td>
+                    {{appointment.doctor.name}}
+                </td>
+                <td>
+                    {{appointment.doctor.lastName}}
+                </td>
+                <td>
+                    {{appointment.doctor.login}}
+                </td>
+                <td>
+                    {{appointment.office.number}}
+                </td>
+                <td>
+                    {{appointment.date | dateFilter}}
+                </td>
+                <td>
+                    {{appointment.date | timeFilter}}
+                </td>
+                <td>
+                    {{appointment.status}}
+                </td>
+                <td>
+                    <a href="#/appointment/{{appointment.idAppointment}}" style="margin-bottom: 5px;" class="btn btn-default btn-xs">Szczegóły</a>
+                    <button type="button" ng-click="delete(appointment.idAppointment)" class="btn btn-danger btn-xs">Usuń</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

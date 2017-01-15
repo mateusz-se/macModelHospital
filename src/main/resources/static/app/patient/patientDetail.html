@@ -1,0 +1,51 @@
+﻿<div sample-menu></div>
+
+<div class="container">
+    <h1>Szczegóły pacjenta</h1>
+    <div>
+        <div ng-show="model.IsEditing" ng-include="'app/patient/patientDetail.edit.html'" />
+        <div ng-hide="model.IsEditing" ng-include="'app/patient/patientDetail.view.html'" />
+    </div>
+    <h1>Wizyty Pacjenta</h1>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="searchBox" class="col-sm-1 control-label">Wyszukaj: </label>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" ng-model="searchText" id="searchBox">
+            </div>
+        </div>
+    </form>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Lekarz</th>
+            <th>Nr. gabinetu</th>
+            <th>Data wizyty</th>
+            <th>Godzina wizyty</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="appointment in patient.appointments | filter:searchText">
+            <td>
+                {{appointment.doctor.name + " " + appointment.doctor.lastName}}
+            </td>
+            <td>
+                {{appointment.office.number}}
+            </td>
+            <td>
+                {{appointment.date | dateFilter}}
+            </td>
+            <td>
+                {{appointment.date | timeFilter}}
+            </td>
+            <td>
+                {{appointment.status}}
+            </td>
+            <td>
+                <a href="#/appointment/{{appointment.idAppointment}}" class="btn btn-default btn-xs">Szczegóły</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

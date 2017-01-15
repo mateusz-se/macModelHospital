@@ -1,0 +1,44 @@
+﻿    <form class="form-horizontal" role="form" >
+        <div class="form-group">
+            <label for="inputLastName" class="col-sm-2 control-label">Nazwisko: </label>
+            <div class="col-sm-6">
+                <span class="form-control">{{patient.lastName}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputName" class="col-sm-2 control-label">Imie: </label>
+            <div class="col-sm-6">
+                <span class="form-control">{{patient.name}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPesel" class="col-sm-2 control-label">Pesel: </label>
+            <div class="col-sm-6">
+                <span class="form-control">{{patient.pesel}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputBirthday" class="col-sm-2 control-label">Data urodzenia: </label>
+            <div class="col-sm-6">
+                <span class="form-control">{{patient.birthDay }}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputGender" class="col-sm-2 control-label">Płeć: </label>
+            <div class="col-sm-6">
+                <span class="form-control">{{patient.gender}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPhone" class="col-sm-2 control-label">Numer telefonu: </label>
+            <div class="col-sm-6">
+                <span class="form-control">{{patient.phone}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-6">
+                <button type="button" ng-click="edit()" class="btn btn-default">Edytuj</button>
+                <button type="button" ng-click="back()" class="btn btn-default">Cofnij</button>
+            </div>
+        </div>
+    </form>

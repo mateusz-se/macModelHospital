@@ -1,0 +1,95 @@
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('35062720087','Albina','Czarnecka','27/6/1935','K','532571957');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('55112672823','Irenka','Kozłowska','26/11/1955','K','691622906');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('73102113848','Honorata','Pawlak','21/10/1973','K','532705176');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('57031996583','Izabella','Sokołowska','19/3/1957','K','884555778');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('70032001562','Berta','Kalinowska','20/3/1970','K','511005653');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('50052874641','Sławomira','Kowalczyk','28/5/1950','K','884252649');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('72080719105','Teodozja','Wojciechowska','7/8/1972','K','696722676');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('94071476550','Gerwazy','Wieczorek','14/7/1994','M','698721037');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('78022781164','Ania','Michalska','27/2/1978','K','884710704');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('79030829741','Grażyna','Jaworska','8/3/1979','K','518267838');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('60082513216','Gerwazy','Kowalczyk','25/8/1960','M','675154240');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('57110926492','Albin','Kalinowski','9/11/1957','M','536230144');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('79040469227','Gertruda','Wiśniewska','4/4/1979','K','604499225');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('91033178042','Zuzanna','Dąbrowski ','31/3/1991','K','695813395');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('48022322834','Lubomierz','Chmielewski','23/2/1948','M','697086307');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('62090257942','Konstancja','Nowak ','2/9/1962','K','679925687');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('79011633321','Justyna','Adamska','16/1/1979','K','699018056');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('92061268437','Bonifacy','Chmielewski','12/6/1992','M','609052212');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('39092440502','Bogusława','Kowalczyk','24/9/1939','K','678807346');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('48100896776','Dorota','Dudek','8/10/1948','M','691424874');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('41011302426','Wiktoria','Nowakowska','13/1/1941','K','535002479');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('37111263837','Zygfryd','Wiśniewski','12/11/1937','M','673548065');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('69042041606','Weronika','Kaczmarek','20/4/1969','K','676002418');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('40070880034','Cezar','Wysocki','8/7/1940','M','675408896');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('69030258489','Gabrysia','Wieczorek','2/3/1969','K','511963268');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('54030240712','Mariusz','Kowalski','2/3/1954','M','785088070');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('31052855119','Borys','Borkowski','28/5/1931','M','785813989');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('63031787649','Beatrycze','Symanska','17/3/1963','K','538828405');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('86063072185','Jowita','Szczepańska','30/6/1986','K','783073541');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('83072263539','Izaak','Walczak','22/7/1983','M','725162846');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('88080378945','Barbara','Michalska','3/8/1988','K','512746275');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('43043060426','Zosia','Sobczak','30/4/1943','K','664223564');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('96030581990','Mateusz','Pawlak','5/3/1996','M','795983421');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('62120243415','Amadej','Zielinski','2/12/1962','M','729928115');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('36112884548','Krystiana','Kozłowska','28/11/1936','K','514715718');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('80122483925','Cecylia','Czarnecka','24/12/1980','K','782309696');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('33101242015','Walerian','Gorski','12/10/1933','M','784644663');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('89121422623','Blanka','Maciejewska','14/12/1989','K','881243988');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('38080396661','Jolanta','Kowalska','3/8/1938','K','793088250');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('54072575900','Ludwika','Sobczak','25/7/1954','K','884339577');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('91121762032','Konstantyn','Gorski','17/12/1991','M','672087537');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('71051250140','Małgorzata','Tomaszewska','12/5/1971','K','782852717');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('57071110079','Janusz','Kowalczyk','11/7/1957','M','695940926');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('97031103064','Teodozja','Tomaszewska','11/3/1997','K','674583678');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('69082924518','Stanisław','Symanski','29/8/1969','M','698864567');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('80022059877','Lucjan','Ostrowski','20/2/1980','M','609144024');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('56092590471','Mieszko','Borkowski','25/9/1956','M','667427082');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('57032462683','Karolina','Pawłowska','24/3/1957','K','603184181');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('95050256242','Konstancja','Maciejewska','2/5/1995','K','795222181');
+insert into PACJENT ( PESEL, IMIE, NAZWISKO, DATA_URODZENIA, PLEC, TELEFON) values('95071099848','Albina','Wieczorek','10/7/1995','K','677639945');
+
+
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 1, 12);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 2, 16);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 3, 12);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 4, 12);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 11, 8);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 12, 8);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 13, 10);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 14, 10);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 15, 12);
+insert into GABINET ( NUMER, WIELKOSC) VALUES ( 16, 12);
+
+
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('lucwal', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Lucjan', 'Walczak', 'Pediatra', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('jansob', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Janusz', 'Sobczak', 'Pediatra', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('stanwiecz', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Stanisław', 'Wieczorek', 'Pediatra', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('jolpaw', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Jolanta', 'Pawłowska', 'Kardiolog', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('karkow', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Karolina', 'Kowalska', 'Kardiolog', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('bogtom', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Bogusława', 'Tomaszewska', 'Laryngolog', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('zuzmac', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Zuzanna', 'Maciejewska', 'Ginekolog', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('bonbor', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Bonifacy', 'Borkowski', 'Ginekolog', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('matgor', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Mateusz', 'Gorski', 'Urolog', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('janpaw', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Janusz', 'Pawlak', 'Ortopeda', 1, 2);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('dorwis', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Dorota', 'Wiśniewska', 'Psycholog', 1, 2);
+
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('anntes', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Anna', 'Testowa', 'Recepcjonistka', 0, 1);
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('jankow', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Jan', 'Kowalewski', 'Prezes', 0, 3);
+
+insert into UZYTKOWNICY (LOGIN, PASS, IMIE, NAZWISKO, STANOWISKO, LEKARZ, ETYKIETA) values ('zofwoj', '$2a$06$AzdpAukXR6mv04egVNAqGuU0BG.t1sKv22RnMnvM5eCOQ8t6RDwxS','Zofia', 'Wojciechowska', 'Administrator', 0, 0);
+
+insert into ETYKIETY (TABELA, ETYKIETA) VALUES ('pacjent', 1);
+insert into ETYKIETY (TABELA, ETYKIETA) VALUES ('uzytkownicy', 0);
+insert into ETYKIETY (TABELA, ETYKIETA) VALUES ('gabinet', 1);
+insert into ETYKIETY (TABELA, ETYKIETA) VALUES ('wizyta', 1);
+insert into ETYKIETY (TABELA, ETYKIETA) VALUES ('diagnoza', 2);
+insert into ETYKIETY (TABELA, ETYKIETA) VALUES ('etykiety', 0);
+insert into ETYKIETY (TABELA, ETYKIETA) VALUES ('przepisane_leki', 2);
+insert into ETYKIETY (TABELA, ETYKIETA) VALUES ('lek', 1);
+
+insert into LEK (NAZWA, OPIS) VALUES ('Aspiryna', 'Środek o działaniu przeciwbólowym, przeciwgorączkowym i przeciwzapalnym');
+insert into LEK (NAZWA, OPIS) VALUES ('Paracetamol', 'Lek przeciwbólowy i przeciwgorączkowy');
+insert into LEK (NAZWA, OPIS) VALUES ('Penicylina', 'Antybiotyk');
+insert into LEK (NAZWA, OPIS) VALUES ('Apap', 'Lek przeciwbólowy');
+insert into LEK (NAZWA, OPIS) VALUES ('Bepanthen', 'Maść ochronna');

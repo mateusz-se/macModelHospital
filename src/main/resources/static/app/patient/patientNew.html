@@ -1,0 +1,59 @@
+﻿<div sample-menu></div>
+
+<div class="container">
+    <h1>Dodaj pacjenta</h1>
+<form class="form-horizontal" role="form" name="patientForm" ng-submit="save()">
+    <div ng-show="noAccessError" class="alert alert-danger">
+        <strong>Błąd!</strong> Masz za wysoki poziom dostępu aby edytować tę tabele
+    </div>
+    <div ng-show="sameLoginError" class="alert alert-danger">
+        <strong>Błąd!</strong> Istnieje już pacjent z takim peselem
+    </div>
+    <div class="form-group">
+        <label for="inputLastName" class="col-sm-2 control-label">Nazwisko: </label>
+        <div class="col-sm-6">
+            <input class="form-control" type="text" ng-model="newData.lastName" id="inputLastName" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputName" class="col-sm-2 control-label">Imie: </label>
+        <div class="col-sm-6">
+            <input class="form-control" type="text" ng-model="newData.name" id="inputName" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPesel" class="col-sm-2 control-label">Pesel: </label>
+        <div class="col-sm-6">
+            <input class="form-control" type="text" ng-model="newData.pesel" id="inputPesel" maxlength="11" minlength="11" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputBirthday" class="col-sm-2 control-label">Data urodzenia: </label>
+        <div class="col-sm-6">
+            <input class="form-control" ng-model="newData.birthDay" id="inputBirthday" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputGender" class="col-sm-2 control-label">Płeć: </label>
+        <div class="col-sm-6">
+            <select class="form-control" ng-model="newData.gender" id="inputGender" required>
+                <option value="" ng-show="false"></option>
+                <option value="K">Kobieta</option>
+                <option value="M">Mężczyzna</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPhone" class="col-sm-2 control-label">Numer telefonu: </label>
+        <div class="col-sm-6">
+            <input class="form-control" type="tel" ng-model="newData.phone" id="inputPhone" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-6">
+            <button type="submit" id="submit" class="btn">Zapisz</button>
+            <button type="button" ng-click="back()" class="btn btn-default">Anuluj</button>
+        </div>
+    </div>
+</form>
+</div>

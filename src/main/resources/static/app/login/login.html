@@ -1,0 +1,14 @@
+﻿<div class="container">
+
+    <form class="form-signin" role="form" ng-submit="login()">
+        <h2 class="form-signin-heading">Proszę się zalogować</h2>
+        <div ng-show="error" class="alert alert-danger">
+            <strong>Błąd!</strong> Podany login lub hasło są niepoprawne
+        </div>
+        <label for="inputEmail" class="sr-only">Login</label>
+        <input type="text" id="inputEmail" class="form-control" ng-model="credentials.username" placeholder="Login" required autofocus>
+        <label for="inputPassword" class="sr-only">Hasło</label>
+        <input type="password" id="inputPassword" class="form-control" ng-model="credentials.password" placeholder="Hasło" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj</button>
+    </form>
+</div>

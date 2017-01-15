@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Szpital</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.css}" rel="stylesheet" />
+    <link th:href="@{/content/bootstrap-theme.css}" rel="stylesheet" />
+    <link th:href="@{/webjars/font-awesome/4.5.0/css/font-awesome.css}" rel="stylesheet" />
+    <link th:href="@{/content/themes/base/jquery-ui.css}" rel="stylesheet" />
+    <link th:href="@{/content/app.css}" rel="stylesheet" />
+    <link th:href="@{/app/login/login.css}" rel="stylesheet" />
+    <link th:href="@{/content/bootstrap-timepicker.min.css}" rel="stylesheet" />
+    <link th:href="@{/content/bootstrap-datepicker.min.css}" rel="stylesheet" />
+    <link th:href="@{/content/bootstrap-datepicker.min.css.map}" rel="stylesheet" />
+    <link th:href="@{/content/bootstrap-datepicker.min.css.map}" rel="stylesheet" />
+
+
+    <script th:src="@{/webjars/jquery/2.1.0/jquery.js}"></script>
+
+    <script th:src="@{/scripts/jquery-ui-1.10.4.js}"></script>
+    <script th:src="@{/scripts/underscore.js}"></script>
+    <script th:src="@{/scripts/angular.js}"></script>
+    <script th:src="@{/scripts/angular-resource.js}"></script>
+    <script th:src="@{/scripts/angular-route.js}"></script>
+    <script th:src="@{/scripts/ui-date.js}"></script>
+    <script th:src="@{/scripts/ui-bootstrap-0.10.0.js}"></script>
+    <script th:src="@{/scripts/bootstrap-datepicker.min.js}"></script>
+    <script th:src="@{/scripts/bootstrap-timepicker.min.js}"></script>
+    <script th:src="@{/scripts/bootstrap-datepicker.pl.min.js}"></script>
+
+    <script th:src="@{/app/app.js}"></script>
+    <script th:src="@{/app/common/common.js}"></script>
+    <script th:src="@{/app/angular/caching/cacheInterceptor.js}"></script>
+    <script th:src="@{/app/angular/data/data.js}"></script>
+    <script th:src="@{/app/angular/loader/loader.js}"></script>
+    <script th:src="@{/app/angular/loader/loader.directive.js}"></script>
+    <script th:src="@{/app/appointment/appointment.js}"></script>
+    <script th:src="@{/app/patient/patient.js}"></script>
+    <script th:src="@{/app/login/login.js}"></script>
+    <script th:src="@{/app/office/office.js}"></script>
+    <script th:src="@{/app/doctor/doctor.js}"></script>
+    <script th:src="@{/app/factories/factories.js}"></script>
+    <script th:src="@{/app/filters/filters.js}"></script>
+    <script th:src="@{/app/tableLabel/table.js}"></script>
+    <script th:src="@{/app/drugs/drugs.js}"></script>
+    <script th:src="@{/app/diagnosis/diagnosis.js}"></script>
+
+    <script type="text/javascript" th:inline="javascript">
+        var version = /*[[${version}]]*/ '0.0.0';
+        angular
+                .module('BSKApplication.Config', [])
+                .constant('SampleApplicationVersion', version);
+    </script>
+</head>
+<body ng-app="BSKApplication">
+    <div ng-view="">
+    </div>
+
+</body>
+</html>

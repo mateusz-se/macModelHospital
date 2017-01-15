@@ -1,0 +1,41 @@
+<div sample-menu></div>
+
+<div class="container">
+    <h1>Szczegóły wizyty</h1>
+    <div>
+        <div ng-show="model.IsEditing" ng-include="'app/appointment/appointmentDetails.edit.html'" />
+        <div ng-hide="model.IsEditing" ng-include="'app/appointment/appointmentDetails.view.html'" />
+    </div>
+    <h1>Diagnoza podczas wizyty</h1>
+    <div ng-show="noAccessDeleteError" class="alert alert-danger">
+        <strong>Błąd!</strong> Masz za wysoki poziom dostępu aby edytować tę tabele
+    </div>
+    <div class="pull-right" ng-show="access">
+        <a href="#/diagnosis/{{appointment.idAppointment}}/-1" class="btn btn-success btn-sm">Dodaj</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Diagnoza</th>
+            <th class="col-md-6">Przepisane leki</th>
+            <th class="pull-right">Opcje</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="diagnosis in diagnoses">
+            <td>
+                {{diagnosis.description}}
+            </td>
+            <td>
+                <ul class="list-inline">
+                    <li ng-repeat="drug in diagnosis.drugs">{{drug.name}}{{$last ? '' : ',' }}</li>
+                </ul>
+            </td>
+            <td class="pull-right">
+                <a href="#/diagnosis/{{appointment.idAppointment}}/{{diagnosis.idDiagnosis}}" class="btn btn-default btn-xs">Szczegóły</a>
+                <button type="button" ng-click="delete(diagnosis.idDiagnosis)" class="btn btn-danger btn-xs">Usuń</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
